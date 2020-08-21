@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'pages/main/main.dart';
 
 main(){
   runApp(MyApp());
@@ -8,23 +9,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SYHomePage(),
+      home: SYMainPage(),
       theme: ThemeData(
-        primaryColor: Colors.green
+        primaryColor: Colors.green,
+        highlightColor: Colors.transparent,
+        splashColor: Colors.transparent
       ),
     );
   }
 }
 
-class SYHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('豆瓣'),
-      ),
-      body: Text('hello 豆瓣'),
-    );
-  }
-}
+
 
