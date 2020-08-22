@@ -15,7 +15,7 @@ List<SYBottomBarItem> items = [
 ];
 
 List<Widget> pages = [
-  SYHome(),
+  SYHomePage(),
   SYSubject(),
   SYGroup(),
   SYMall(),

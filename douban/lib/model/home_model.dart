@@ -34,7 +34,7 @@ class MovieItem{
 
   MovieItem.fromMap(Map<String, dynamic> json) {
     this.rank = counter++;
-    this.imageURL = json['images']['medium'];
+    this.imageURL = json['images']['large'];
     this.title = json['title'];
     this.playDate = json['year'].toString();
     this.rating = json['rating']['average'];

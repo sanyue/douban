@@ -16,7 +16,6 @@ class SYHomeRequest{
     for (var item in subjects){
       movies.add(MovieItem.fromMap(item));
     }
-    print('movies:$movies');
     return movies;
   }
 }
